@@ -1,9 +1,8 @@
-.page {
-  display: flex;
-  box-sizing: border-box;
-}
+
+
 body {
-    margin: 0;
+  margin:0;
+  
 }
 /* header  */
 header {
@@ -17,16 +16,21 @@ header {
   margin: 0;
   padding: 0;
   min-width: 360px;
-  
+  @media screen and (max-width: 700px) {
+    width: 360px;
+    
+  }
 }
 
 img {
   width: 250px;
+  padding: 10px;
 }
 
-p {
+header p {
   font-size: 32px;
   color: white;
+  padding: 20px;
 }
 
 /* main */
@@ -43,6 +47,15 @@ main {
 
 ul {
   list-style: none;
+  font-size: 24px;
+  
+  @media screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
 }
 li {
   padding: 25px;
@@ -52,12 +65,16 @@ nav {
   background-color: #9cb4c9;
   width: 400px;
 }
-
+h1 {
+  font-size: 26px;
+  padding: 20px;
+}
 article {
   background-color: #9cb4c9bf;
   width: 800px;
 }
 article p {
+  padding: 20px;
   color: black;
   font-size: 24px;
 }
@@ -70,9 +87,14 @@ footer {
   width: 1200px;
   height: 100px;
   padding: 0;
+  @media screen and (max-width: 700px) {
+    width: 360px;
+  }
 }
 
-p {
+footer p {
+  color: white;
   font-size: 16px;
   margin: auto;
+  padding: 20px;
 }
